@@ -270,7 +270,7 @@ SEARCH_API_LINK = environ.get('SEARCH_API_LINK', '').rstrip("/")
 if len(SEARCH_API_LINK) == 0:
     SEARCH_API_LINK = ''
 
-CAP_FONT = environ.get('CAP_FONT', 'b').lower()
+CAP_FONT = environ.get('CAP_FONT', '').lower()
 if CAP_FONT.strip() not in ['', 'b', 'i', 'u', 's', 'spoiler', 'code']:
     CAP_FONT = 'code'
 
